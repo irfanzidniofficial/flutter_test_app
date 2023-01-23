@@ -1,11 +1,11 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_test_app/bloc/cubit/bottom_nav_cubit.dart';
 import 'package:flutter_test_app/presentation/favorite_screen.dart';
 import 'package:flutter_test_app/presentation/home_screen.dart';
 import 'package:flutter_test_app/presentation/search_screen.dart';
-import 'package:flutter_test_app/shared/styles.dart';
+import '../bloc/bottom_nav/bottom_nav_cubit.dart';
+import '../shared/style.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -15,10 +15,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  final List<IconData> bottomNavIcons = [
-    Icons.home,
-    Icons.favorite,
-  ];
+  final List<IconData> bottomNavIcons = [Icons.home, Icons.favorite];
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +37,7 @@ class _MainScreenState extends State<MainScreen> {
         } else if (state == 1) {
           return const FavoriteScreen();
         } else {
-          return const SearchScreen();
+          return SearchScreen();
         }
       }),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

@@ -37,6 +37,9 @@ dependencies:
   flutter_bloc: ^8.1.1
   google_fonts: ^3.0.1
   animated_bottom_navigation_bar: ^1.1.0
+  equatable: ^2.0.5
+  animated_snack_bar: ^0.3.0
+  floor: ^1.4.1
 
 dev_dependencies:
   flutter_test:
@@ -48,6 +51,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
+  floor_generator: ^1.4.1
+  build_runner: ^2.1.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

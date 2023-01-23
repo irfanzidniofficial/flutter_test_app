@@ -1,5 +1,5 @@
 import 'aired_model.dart';
-import 'image_anime_model.dart';
+import 'image_anime_modal.dart';
 
 class AnimeModel {
   int? malId;
@@ -12,6 +12,7 @@ class AnimeModel {
   String? duration;
   double? score;
   String? synopsis;
+
   AnimeModel({
     this.malId,
     this.url,
