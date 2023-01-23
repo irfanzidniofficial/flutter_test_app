@@ -11,6 +11,14 @@ class HomeScreen extends StatelessWidget {
           'Home Screen',
         ),
       ),
+      body: Center(
+        child: MaterialButton(
+          child: const Text('Go to Detail'),
+          onPressed: () {
+            Navigator.of(context).pushNamed('/detail');
+          },
+        ),
+      ),
     );
   }
 }
